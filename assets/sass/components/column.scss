@@ -1,0 +1,57 @@
+body {
+    main {
+        .column {
+            .items {
+                .item1 {
+                    background-color: #65C7F7;
+                    padding-right: 0;
+                    img {
+                        @include breakpoint(phone) {
+                            width: 100%;
+                        }
+                        @include breakpoint(desktop) {
+                            width: 100%;
+                        }
+                    }
+                }
+                .item2 {
+                    background-color: #ECECEC;
+                    padding-left: 4%;
+                    @include breakpoint(phone) {
+                        padding-left: 9%;
+                        padding-right: 9%;
+                    }
+                    article {
+                        margin-top: 95px;
+                        @include breakpoint(phone) {
+                            margin-top: 50px;
+                            margin-bottom: 40px;
+                        }
+                        @include breakpoint(tablet) {
+                            margin-top: 30px;
+                            margin-bottom: 23px;
+                        }
+                        p {
+                            font-weight: bold;
+                        }
+                        p.text {
+                            color: #909090;
+                        }
+                        h2 {
+                            font-weight: bold;
+                            @include breakpoint(phone) {
+                                font-size: 24px;
+                            }
+                            @include breakpoint(tablet) {
+                                font-size: 20px;
+                            }
+                        }
+                        p.text2 {
+                            color: #005EED;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

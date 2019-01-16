@@ -1,0 +1,254 @@
+html body {
+  font-family: 'Montserrat', sans-serif; }
+  html body .row {
+    margin-left: 0;
+    margin-right: 0; }
+
+body header .headboard {
+  position: absolute;
+  width: 100%;
+  z-index: 1; }
+  body header .headboard .items {
+    padding-top: 1%;
+    padding-bottom: 1%; }
+    @media (max-width: 667px) {
+      body header .headboard .items {
+        text-align: center; } }
+    body header .headboard .items .item1 {
+      padding-left: 4%; }
+    @media (min-width: 1025px) {
+      body header .headboard .items .item2 {
+        text-align: right;
+        padding-right: 4%; } }
+    body header .headboard .items .item2 p {
+      display: inline;
+      margin-right: 5%; }
+      @media (max-width: 667px) {
+        body header .headboard .items .item2 p {
+          display: block;
+          margin-top: 20px; } }
+    body header .headboard .items .item2 p.text {
+      font-size: 20px;
+      color: #333333; }
+      @media (min-width: 668px) and (max-width: 1024px) {
+        body header .headboard .items .item2 p.text {
+          font-size: 16px; } }
+    body header .headboard .items .item2 p.num {
+      font-size: 28px;
+      font-weight: bold; }
+      @media (min-width: 668px) and (max-width: 1024px) {
+        body header .headboard .items .item2 p.num {
+          font-size: 20px; } }
+    body header .headboard .items .item2 i {
+      margin-right: 1%; }
+    body header .headboard .items .item2 .btn {
+      background-color: #005EED;
+      color: #FFFFFF;
+      width: 17%;
+      transition: 1s; }
+      @media (max-width: 667px) {
+        body header .headboard .items .item2 .btn {
+          width: 50%; } }
+      @media (min-width: 668px) and (max-width: 1024px) {
+        body header .headboard .items .item2 .btn {
+          width: 43%; } }
+      @media (min-width: 1025px) {
+        body header .headboard .items .item2 .btn {
+          margin-top: -10px; } }
+    body header .headboard .items .item2 .btn:hover {
+      background-color: #FFFFFF;
+      color: #005EED; }
+
+body main .slide {
+  background-image: url("../../assets/Images/Fondo-Slide.jpg");
+  background-size: cover;
+  padding-top: 9%; }
+  @media (max-width: 667px) {
+    body main .slide {
+      padding-top: 80%;
+      height: 1050px; } }
+  body main .slide .items .item1 {
+    padding-left: 9%; }
+    @media (max-width: 667px) {
+      body main .slide .items .item1 {
+        position: absolute;
+        padding-top: 80%;
+        padding-right: 9%; } }
+    @media (min-width: 668px) and (max-width: 1024px) {
+      body main .slide .items .item1 {
+        padding-left: 5%; } }
+    @media (min-width: 668px) and (max-width: 1024px) {
+      body main .slide .items .item1 article {
+        margin-top: 50px; } }
+    body main .slide .items .item1 article p {
+      color: #666666; }
+    body main .slide .items .item1 article p.text {
+      font-weight: bold; }
+    body main .slide .items .item1 article p.text2 {
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-size: 21px; }
+    body main .slide .items .item1 article h1 {
+      font-weight: bold; }
+      @media (max-width: 667px) {
+        body main .slide .items .item1 article h1 {
+          font-size: 22px; } }
+      @media (min-width: 668px) and (max-width: 1024px) {
+        body main .slide .items .item1 article h1 {
+          font-size: 25px; } }
+    body main .slide .items .item1 .btn {
+      background-color: #E85A24;
+      color: #FFFFFF;
+      border: solid 1px #E85A24;
+      width: 100%;
+      height: 63px;
+      font-weight: bold;
+      font-size: 20px;
+      transition: 1s; }
+      @media (max-width: 667px) {
+        body main .slide .items .item1 .btn {
+          font-size: 18px; } }
+      @media (min-width: 1025px) {
+        body main .slide .items .item1 .btn {
+          width: 36%; } }
+    body main .slide .items .item1 .btn:hover {
+      background-color: #FFFFFF;
+      color: #E85A24; }
+  body main .slide .items .item2 {
+    text-align: center; }
+    @media (max-width: 667px) {
+      body main .slide .items .item2 img {
+        width: 50%; } }
+    @media (min-width: 668px) and (max-width: 1024px) {
+      body main .slide .items .item2 img {
+        width: 78%;
+        margin-top: 50px; } }
+
+body main .column .items .item1 {
+  background-color: #65C7F7;
+  padding-right: 0; }
+  @media (max-width: 667px) {
+    body main .column .items .item1 img {
+      width: 100%; } }
+  @media (min-width: 1025px) {
+    body main .column .items .item1 img {
+      width: 100%; } }
+
+body main .column .items .item2 {
+  background-color: #ECECEC;
+  padding-left: 4%; }
+  @media (max-width: 667px) {
+    body main .column .items .item2 {
+      padding-left: 9%;
+      padding-right: 9%; } }
+  body main .column .items .item2 article {
+    margin-top: 95px; }
+    @media (max-width: 667px) {
+      body main .column .items .item2 article {
+        margin-top: 50px;
+        margin-bottom: 40px; } }
+    @media (min-width: 668px) and (max-width: 1024px) {
+      body main .column .items .item2 article {
+        margin-top: 30px;
+        margin-bottom: 23px; } }
+    body main .column .items .item2 article p {
+      font-weight: bold; }
+    body main .column .items .item2 article p.text {
+      color: #909090; }
+    body main .column .items .item2 article h2 {
+      font-weight: bold; }
+      @media (max-width: 667px) {
+        body main .column .items .item2 article h2 {
+          font-size: 24px; } }
+      @media (min-width: 668px) and (max-width: 1024px) {
+        body main .column .items .item2 article h2 {
+          font-size: 20px; } }
+    body main .column .items .item2 article p.text2 {
+      color: #005EED; }
+
+body main .benefits {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 9%;
+  padding-right: 9%; }
+  @media (max-width: 667px) {
+    body main .benefits {
+      padding-top: 20%;
+      padding-bottom: 20%; } }
+  @media (min-width: 668px) and (max-width: 1024px) {
+    body main .benefits {
+      padding-left: 2%;
+      padding-right: 2%; } }
+  body main .benefits .items {
+    text-align: center; }
+    body main .benefits .items .item {
+      margin-top: 60px; }
+      body main .benefits .items .item .line {
+        border-right: solid 2px #65C7F7; }
+        @media (max-width: 667px) {
+          body main .benefits .items .item .line {
+            border: none; } }
+      body main .benefits .items .item h2 {
+        font-weight: bold;
+        margin-top: 40px; }
+        @media (max-width: 667px) {
+          body main .benefits .items .item h2 {
+            font-size: 25px; } }
+        @media (min-width: 668px) and (max-width: 1024px) {
+          body main .benefits .items .item h2 {
+            font-size: 20px; } }
+      body main .benefits .items .item p {
+        color: #666666;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 21px; }
+        @media (min-width: 668px) and (max-width: 1024px) {
+          body main .benefits .items .item p {
+            font-size: 19px; } }
+
+body main .testimony {
+  margin-top: 100px;
+  text-align: center; }
+  body main .testimony .group {
+    background: linear-gradient(to right, #65C7F7 0%, #0052D4 100%);
+    height: 370px; }
+  body main .testimony img.pc {
+    margin-top: -508px; }
+    @media (max-width: 667px) {
+      body main .testimony img.pc {
+        width: 100%; } }
+    @media (min-width: 668px) and (max-width: 1024px) {
+      body main .testimony img.pc {
+        width: 100%; } }
+  body main .testimony i.arrow {
+    font-size: 60px; }
+  body main .testimony article {
+    margin-top: 40px;
+    padding-left: 26%;
+    padding-right: 26%; }
+    @media (max-width: 667px) {
+      body main .testimony article {
+        padding-left: 9%;
+        padding-right: 9%; } }
+    body main .testimony article .description {
+      border: solid 1px #B7B7B7;
+      border-radius: 15px;
+      margin-top: 20px;
+      padding-top: 2%; }
+    body main .testimony article p.text {
+      margin-top: 10px;
+      color: #666666;
+      font-weight: bold;
+      font-size: 20px; }
+      @media (max-width: 667px) {
+        body main .testimony article p.text {
+          font-size: 15px; } }
+    body main .testimony article p.name {
+      font-weight: bold;
+      margin: 0;
+      margin-top: 13px;
+      color: #808080; }
+    body main .testimony article p.prof {
+      color: #808080;
+      margin: 0; }
+    body main .testimony article span {
+      color: #005EED;
+      font-weight: bold; }

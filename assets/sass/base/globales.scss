@@ -1,7 +1,9 @@
 html {
     body {
-        font-family: 'Fira Sans Extra Condensed', sans-serif;
-        color: #FFFFFF;
-        background-image: url('../../assets/images/fondo-OptimusDrone.png');
+        font-family: 'Montserrat', sans-serif;
+        .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
 }

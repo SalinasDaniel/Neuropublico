@@ -1,0 +1,82 @@
+body {
+    main {
+        .slide {
+            background-image: url('../../assets/Images/Fondo-Slide.jpg');
+            background-size: cover;
+            padding-top: 9%;
+            @include breakpoint(phone) {
+                padding-top: 80%;
+                height: 1050px;
+            }
+            .items {
+                .item1 {
+                    padding-left: 9%;
+                    @include breakpoint(phone) {
+                        position: absolute;
+                        padding-top: 80%;
+                        padding-right: 9%;
+                    }
+                    @include breakpoint(tablet) {
+                        padding-left: 5%;
+                    }
+                    article {
+                        @include breakpoint(tablet) {
+                            margin-top: 50px;
+                        }
+                        p {
+                            color: #666666;
+                        }
+                        p.text {
+                            font-weight: bold;
+                        }
+                        p.text2 {
+                            font-family: 'Open Sans Condensed', sans-serif;
+                            font-size: 21px;
+                        }
+                        h1 {
+                            font-weight: bold;
+                            @include breakpoint(phone) {
+                                font-size: 22px;
+                            }
+                            @include breakpoint(tablet) {
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                    .btn {
+                        background-color: #E85A24;
+                        color: #FFFFFF;
+                        border: solid 1px #E85A24;
+                        width: 100%;
+                        height: 63px;
+                        font-weight: bold;
+                        font-size: 20px;
+                        transition: 1s;
+                        @include breakpoint(phone) {
+                            font-size: 18px;
+                        }
+                        @include breakpoint(desktop) {
+                            width: 36%;
+                        }
+                    }
+                    .btn:hover {
+                        background-color: #FFFFFF;
+                        color: #E85A24;
+                    }
+                }
+                .item2 {
+                    text-align: center;
+                    img {
+                        @include breakpoint(phone) {
+                            width: 50%;
+                        }
+                        @include breakpoint(tablet) {
+                            width: 78%;
+                            margin-top: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

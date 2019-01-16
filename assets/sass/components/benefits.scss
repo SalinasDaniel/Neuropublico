@@ -1,0 +1,48 @@
+body {
+    main {
+        .benefits {
+            padding-top: 10%;
+            padding-bottom: 10%;
+            padding-left: 9%;
+            padding-right: 9%;
+            @include breakpoint(phone) {
+                padding-top: 20%;
+                padding-bottom: 20%;
+            }
+            @include breakpoint(tablet) {
+                padding-left: 2%;
+                padding-right: 2%;
+            }
+            .items {
+                text-align: center;
+                .item {
+                    margin-top: 60px;
+                    .line {
+                        border-right: solid 2px #65C7F7;
+                        @include breakpoint(phone) {
+                            border: none;
+                        }
+                    }
+                    h2 {
+                        font-weight: bold;
+                        margin-top: 40px;
+                        @include breakpoint(phone) {
+                            font-size: 25px;
+                        }
+                        @include breakpoint(tablet) {
+                            font-size: 20px;
+                        }
+                    }
+                    p {
+                        color: #666666;
+                        font-family: 'Open Sans Condensed', sans-serif;
+                        font-size: 21px;
+                        @include breakpoint(tablet) {
+                            font-size: 19px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

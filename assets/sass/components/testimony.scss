@@ -1,0 +1,62 @@
+body {
+    main {
+        .testimony {
+            margin-top: 100px;
+            text-align: center;
+            .group {
+                background: linear-gradient(to right, #65C7F7 0%, #0052D4 100%);
+                height: 370px;
+            }
+            img.pc {
+                margin-top: -508px;
+                @include breakpoint(phone) {
+                    width: 100%;
+                }
+                @include breakpoint(tablet) {
+                    width: 100%;
+                }
+            }
+            i.arrow {
+                font-size: 60px;
+            }
+            article {
+                margin-top: 40px;
+                padding-left: 26%;
+                padding-right: 26%;
+                @include breakpoint(phone) {
+                    padding-left: 9%;
+                    padding-right: 9%;
+                }
+                .description {
+                    border: solid 1px #B7B7B7;
+                    border-radius: 15px;
+                    margin-top: 20px;
+                    padding-top: 2%;
+                }
+                p.text {
+                    margin-top: 10px;
+                    color: #666666;
+                    font-weight: bold;
+                    font-size: 20px;
+                    @include breakpoint(phone) {
+                        font-size: 15px;
+                    }
+                }
+                p.name {
+                    font-weight: bold;
+                    margin: 0;
+                    margin-top: 13px;
+                    color: #808080;
+                }
+                p.prof {
+                    color: #808080;
+                    margin: 0;
+                }
+                span {
+                    color: #005EED;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
