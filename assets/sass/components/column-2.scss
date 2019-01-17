@@ -1,0 +1,80 @@
+body {
+    main {
+        .column-2 {
+            padding-bottom: 5%;
+            @include breakpoint(phone) {
+                padding-bottom: 10%;
+            }
+            .item1 {
+                text-align: center;
+                img {
+                    width: 79%;
+                }
+            }
+            .item2 {
+                @include breakpoint(tablet) {
+                    padding-right: 3%;
+                }
+                @include breakpoint(desktop) {
+                    padding-right: 12%;
+                }
+                article {
+                    @include breakpoint(phone) {
+                        padding-left: 9%;
+                        margin-top: 30px;
+                        padding-right: 9%;
+                    }
+                    span,
+                    p {
+                        font-family: 'Open Sans Condensed', sans-serif;
+                    }
+                    span {
+                        font-weight: bold;
+                        color: #909090;
+                    }
+                    h2 {
+                        font-weight: bold;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        font-size: 19px;
+                        @include breakpoint(desktop) {
+                            font-size: 27px;
+                        }
+                    }
+                    p {
+                        color: #070B19;
+                        font-size: 21px;
+                    }
+                }
+            }
+            .wavy {
+                @include breakpoint(phone) {
+                    margin-top: -1px;
+                }
+            }
+        }
+        .colum {
+            h2.title {
+                text-align: center;
+                font-weight: bold;
+                font-size: 30px;
+                margin-bottom: 130px;
+                @include breakpoint(phone) {
+                    margin-bottom: 0px;
+                    font-size: 21px;
+                }
+                @include breakpoint(tablet) {
+                    font-size: 25px;
+                    margin-bottom: 80px;
+                }
+            }
+            .itm {
+                padding-right: 0%;
+                padding-left: 8%;
+            }
+        }
+        .colum-2 {
+            background-color: #E9E9E9;
+        }
+    }
+}

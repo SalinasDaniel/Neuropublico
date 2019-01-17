@@ -1,0 +1,179 @@
+body {
+    main {
+        .table-price {
+            padding-top: 10%;
+            padding-bottom: 10%;
+            font-family: 'Open Sans Condensed', sans-serif;
+            @include breakpoint(phone) {
+                padding-top: 20%;
+                padding-bottom: 20%;
+            }
+            article {
+                text-align: center;
+                h2 {
+                    margin-top: 33px;
+                    margin-bottom: 300px;
+                    font-size: 36px;
+                    color: #070B19;
+                    font-family: 'Montserrat', sans-serif;
+                    @include breakpoint(phone) {
+                        font-size: 26px;
+                        padding-left: 9%;
+                        padding-right: 9%;
+                        margin-bottom: 100px;
+                    }
+                }
+                span {
+                    color: #FFFFFF;
+                    font-weight: bold;
+                }
+            }
+            .item2 {
+                @include breakpoint(desktop) {
+                    margin-top: -114px;
+                }
+                .promo {
+                    background: linear-gradient(to right, #8540D1, #0069FF);
+                    border-radius: 12px 12px 0px 0px;
+                    text-align: center;
+                    font-family: 'Montserrat', sans-serif;
+                    img {
+                        width: 20%;
+                        margin-top: -44px;
+                    }
+                    .time {
+                        display: flex;
+                        padding-left: 5%;
+                        padding-right: 5%;
+                        margin-bottom: 20px;
+                        @include breakpoint(phone) {
+                            padding-left: 0;
+                            padding-right: 0;
+                        }
+                        @include breakpoint(tablet) {
+                            padding-left: 26%;
+                            padding-right: 26%;
+                        }
+                        .tm,
+                        span {
+                            color: #FFFFFF;
+                        }
+                        .tm {
+                            float: left;
+                            font-weight: bold;
+                            background-color: #333333;
+                            opacity: 0.9;
+                            width: 29px;
+                            height: 29px;
+                            border-radius: 6px;
+                            padding-top: 6px;
+                            margin-top: -7px;
+                            margin-right: 5px;
+                            font-size: 12px;
+                        }
+                        span {
+                            font-size: 10px;
+                            margin-left: 5%;
+                            @include breakpoint(tablet) {
+                                font-size: 11px;
+                            }
+                        }
+                    }
+                    p {
+                        font-weight: bold;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+        section.pricing {
+            background: #9CECFB;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #0052D4, #65C7F7, #9CECFB);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to left, #0052D4, #65C7F7, #9CECFB);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+        .pricing .borde-prof {
+            border: 2px solid #8540D1;
+            border-radius: 0px 0px 12px 12px;
+        }
+        .pricing .card {
+            border: none;
+            border-radius: 1rem;
+            transition: all 0.2s;
+            box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+        }
+        .pricing hr {
+            margin: 1.5rem 0;
+        }
+        .pricing .card-title {
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
+            letter-spacing: .1rem;
+            font-weight: bold;
+        }
+        .pricing .price-old {
+            text-align: center;
+        }
+        .pricing .price-old span {
+            text-decoration: line-through;
+            color: #909090;
+        }
+        .pricing .card-price {
+            font-size: 33px;
+            font-weight: bold;
+        }
+        .pricing .prof {
+            background: linear-gradient(to right, #8540D1, #0069FF);
+            width: 55%;
+            border-radius: 6px;
+            color: #FFFFFF;
+            margin-left: 22%;
+        }
+        .pricing .prof-btn {
+            background: linear-gradient(to right, #8540D1, #0069FF);
+        }
+        .pricing .prof-btn:hover {
+            background: linear-gradient(to right, #0069FF, #8540D1);
+        }
+        .period {
+            font-size: 17px;
+            display: block;
+            text-align: center;
+            font-weight: bold;
+        }
+        .pricing ul li {
+            margin-bottom: 1rem;
+        }
+        .pricing .text-muted {
+            opacity: 0.7;
+        }
+        .pricing .btn {
+            font-size: 16px;
+            border-radius: 5rem;
+            letter-spacing: .1rem;
+            font-weight: bold;
+            padding: 1rem;
+            transition: all 0.2s;
+            background-color: #4D9AFF;
+            border: solid 1px #9CECFB;
+            transition: 1s;
+        }
+        .pricing .btn:hover {
+            background-color: #FFFFFF;
+            color: #4D9AFF;
+        }
+        /* Hover Effects on Card */
+        @media (min-width: 992px) {
+            .pricing .card:hover {
+                margin-top: -.25rem;
+                margin-bottom: .25rem;
+                box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+            }
+            .pricing .card:hover .btn {
+                opacity: 1;
+            }
+        }
+    }
+}

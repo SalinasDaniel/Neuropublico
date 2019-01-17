@@ -22,7 +22,7 @@ body {
                         padding-right: 9%;
                     }
                     article {
-                        margin-top: 95px;
+                        padding-top: 8%;
                         @include breakpoint(phone) {
                             margin-top: 50px;
                             margin-bottom: 40px;
@@ -39,15 +39,14 @@ body {
                         }
                         h2 {
                             font-weight: bold;
-                            @include breakpoint(phone) {
-                                font-size: 24px;
-                            }
+                            font-size: 24px;
                             @include breakpoint(tablet) {
                                 font-size: 20px;
                             }
                         }
-                        p.text2 {
+                        a.text2 {
                             color: #005EED;
+                            font-weight: bold;
                         }
                     }
                 }

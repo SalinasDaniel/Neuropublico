@@ -9,6 +9,7 @@ body {
                 padding-bottom: 1%;
                 @include breakpoint(phone) {
                     text-align: center;
+                    padding-top: 10%;
                 }
                 .item1 {
                     padding-left: 4%;
@@ -46,7 +47,7 @@ body {
                     .btn {
                         background-color: #005EED;
                         color: #FFFFFF;
-                        width: 17%;
+                        width: 22%;
                         transition: 1s;
                         @include breakpoint(phone) {
                             width: 50%;

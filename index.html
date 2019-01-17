@@ -8,18 +8,44 @@
     <meta name="description" content="">
     <link href="index.php" rel="canonical">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/jquery.gmaps.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.gmaps.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet">
 </head>
 
-<body>
+<body onload="ConteoRegresivo()">
     <header>
+        <section class="promotion" id="promo">
+            <span class="close">X</span>
+            <div class="row items">
+                <img src="assets/Images/Estrella.png" alt="Promocion">
+                <p>TU NEUROSITIO A <span>$599.000</span></p>
+                <div class="time">
+                    <span>
+                        <div class="tm" id="Hora">00</div>
+                        HORAS
+                    </span>
+                    <span>
+                        <div class="tm" id="Minutos">00</div>
+                        MINUTOS
+                    </span>
+                    <span>
+                        <div class="tm" id="Segundos">00</div>
+                        SEGUNDOS ANTES DE EXPIRAR
+                    </span>
+                </div>
+                <button class="btn btn-default">ADQUIRIR OFERTA AÑO NUEVO</button>
+            </div>
+        </section>
         <section class="headboard">
             <div class="row items">
                 <div class="col-sm-6 item1">
@@ -34,7 +60,7 @@
         </section>
     </header>
     <main>
-        <section class="slide">
+        <section class="slides">
             <div class="row items">
                 <div class="col-sm-6 item1">
                     <article>
@@ -49,7 +75,6 @@
                 </div>
             </div>
         </section>
-
         <section class="column">
             <div class="row items">
                 <div class="col-sm-6 item1">
@@ -59,12 +84,11 @@
                     <article>
                         <p class="text">DESCUBRE EL ÉXITO ONLINE</p>
                         <h2>LA ESTRUCTURA DE LOS NEUROSITIOS<br> PERSUADEN LAS DECISIONES DE COMPRA</h2>
-                        <p class="text2">Más información</p>
+                        <a href="#" class="text2">Más información</a>
                     </article>
                 </div>
             </div>
         </section>
-
         <section class="benefits">
             <div class="row items">
                 <div class="col-sm-4 item">
@@ -88,7 +112,6 @@
                 </div>
             </div>
         </section>
-
         <section class="testimony">
             <div class="row group"></div>
             <img class="pc" src="assets/Images/Testimonio-Pc.png" alt="Testimonio">
@@ -99,13 +122,454 @@
                 <br>
                 <div class="description">
                     <img src="assets/Images/Estrellas.png" alt="Estrellas Testimonios">
-                    <p class="text">“Desde que Neuropúblico construyo mi neurositio, se<br> comunican alrededor de 23 nuevos clientes interesados en <br> mis servicios cada día”.</p>
+                    <p class="text">“Desde que Neuropúblico construyo mi neurositio, se comunican alrededor de 23 nuevos clientes interesados en mis servicios cada día”.</p>
                 </div>
                 <p class="name">Marlen Fandiño</p>
                 <p class="prof">Presidenta Buffet Asejurídicas</p>
-                <span>Leer historia completa</span>
+                <a href="#">Leer historia completa</a>
             </article>
         </section>
+        <section class="specialists">
+            <img class="cerebro" src="assets/Images/Cerebro.png" alt="Cerebro">
+            <div class="group-1">
+                <p>PIONEROS DEL NEUROMARKETING EN COLOMBIA</p>
+                <h2>UN NEUROSITIO ENTIENDE LOS <br> COMPORTAMIENTOS PSICOLÓGICOS<br> DE COMPRA DE TUS CLIENTES</h2>
+            </div>
+            <div class="group-2">
+                <div class="item">
+                    <img src="assets/Images/Ojo.png" alt="Ojo">
+                    <h3>ATENCIÓN</h3>
+                    <p>Se captura en el momento en que se ve un <br> anuncio relevante.</p>
+                </div>
+                <div class="item">
+                    <img src="assets/Images/Cabeza.png" alt="Cabeza">
+                    <h3>MEMORIA</h3>
+                    <p>Los consumidores retienen la marca en <br> momentos específicos del anuncio.</p>
+                </div>
+                <div class="item">
+                    <img src="assets/Images/Cara.png" alt="Cara">
+                    <h3>EMOCIÓN</h3>
+                    <p>El anuncio debe variar las emociones del <br> consumidor entre altas y bajas.</p>
+                </div>
+            </div>
+            <div class="group-3">
+                <hr>
+                <h2>SOMOS ESPECIALISTAS EN <br> NEUROMARKETING</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis. </p>
+                <a href="#">Más sobre el NeuroMarketing</a>
+            </div>
+        </section>
+        <section class="column-2">
+            <div class="wavy">
+                <svg viewBox="0 0 500 100" preserveAspectRatio="xMinYMin meet">
+                    <path d="M0,10 C300,100 530,0 500,0 L200,00 L0,0 Z" style="stroke: none; fill:#070B25;"></path>
+                </svg>
+            </div>
+            <div class="row items">
+                <div class="col-sm-7 item1">
+                    <img src="assets/Images/Marketing-Digital.png" alt="Marketing">
+                </div>
+                <div class="col-sm-5 item2">
+                    <article>
+                        <span>NEUROMARKETING DIGITAL</span>
+                        <h2>HEMOS ESTUDIADO LAS <br> REACCIONES CEREBRALES <br> DE LOS SERES HUMANOS <br> AL COMPRAR</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="column-2 colum">
+            <h2 class="title">¿QUÉ HACE EFECTIVOS A LOS NEUROSITIOS?</h2>
+            <div class="row items">
+                <div class="col-sm-5 item2 itm">
+                    <article>
+                        <span>DESCUBRE EL ÉXITO ONLINE</span>
+                        <h2>CREAMOS PARA TI UN <br> PROCESO EFECTIVO DE <br> CONVENCIMIENTO DE <br> COMPRADORES</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor.</p>
+                    </article>
+                </div>
+                <div class="col-sm-7 item1">
+                    <img src="assets/Images/Marketing-Digital-3.png" alt="Marketing">
+                </div>
+            </div>
+        </section>
+        <section class="column-2 colum-2">
+            <div class="row items">
+                <div class="col-sm-7 item1">
+                    <img src="assets/Images/Marketing-Digital-2.png" alt="Marketing">
+                </div>
+                <div class="col-sm-5 item2">
+                    <article>
+                        <span>DESCUBRE EL ÉXITO ONLINE</span>
+                        <h2>GENERAMOS UN DISEÑO <br> AUTÉNTICO QUE REFLEJA <br> LO MEJOR DE TU MARCA</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobor.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="column-3">
+            <div class="row items">
+                <div class="col-sm-6 item1">
+                    <img src="assets/Images/Estrella.png" alt="Estrella-Promocion">
+                    <h2>COMPRA UNO <br> LLEVA EL SEGUNDO <br> A MITAD DE PRECIO</h2>
+                </div>
+                <div class="col-sm-6 item2">
+                    <p>2x1</p>
+                    <button class="btn btn-default">ADQUIRIR OFERTA AÑO NUEVO</button>
+                </div>
+            </div>
+        </section>
+        <section class="construction-steps">
+            <span>NEUROMARKETING DIGITAL</span>
+            <h2 class="title">ASÍ GENERAMOS TU NEUROSITIO DE <br> ALTA CALIDAD EN POCO TIEMPO</h2>
+            <div class="row items">
+                <div class="col-sm-4 item">
+                    <span class="num">1</span>
+                    <img src="assets/Images/Compras.png" alt="Neurositios">
+                    <img class="linea" src="assets/Images/Linea.png" alt="Linea">
+                    <p>Compra un <br> Neurositio</p>
+                    <p>Elige una de las tres opciones de Neurositios que tenemos disponibles actualmente.</p>
+                    <a href="#">Ver Precios</a>
+                </div>
+                <div class="col-sm-4 item">
+                    <span class="num">2</span>
+                    <img src="assets/Images/Asesoria.png" alt="Agentes Expertos">
+                    <img class="linea" src="assets/Images/Linea-2.png" alt="Linea">
+                    <p>Un agente te asesorará <br> para el éxito de tu empresa</p>
+                    <p>En nuestra agencia en el norte de Bogotá, en tu oficina en Bogotá o vía Skype a nivel nacional.</p>
+                </div>
+                <div class="col-sm-4 item">
+                    <span class="num">3</span>
+                    <img src="assets/Images/Servicio.png" alt="Informacion de Servicio">
+                    <img class="linea line" src="assets/Images/Linea-3.png" alt="Linea">
+                    <p>Nos envías la info de <br> tu servicio/producto</p>
+                    <p>El listado de tus servicios, tu logo y algunos datos básicos sobre tu marca te serán solicitados.</p>
+                </div>
+            </div>
+            <i class="check fas fa-check"></i><br>
+            <span class="num-4">4</span>
+            <h2 class="title2">Obtienes tu Neurositio <br> listo para traerte clientes</h2>
+            <button class="btn btn-default">SOLICITAR NEUROSITIO</button>
+        </section>
+        <section class="accordion">
+            <h2>PREGUNTAS FRECUENTES</h2>
+            <div id="accordion2">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <span>¿Cuál es el tiempo estimado para llegar?</span>
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="fas fa-caret-down"></i>
+                              </button>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion2">
+                        <div class="card-body">
+                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                                vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <span>¿Qué tipo de garantía ofrece el servicio?</span>
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <i class="fas fa-caret-down"></i>
+                              </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion2">
+                        <div class="card-body">
+                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                                vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <span class="text3">¿Qué sucede si pierdo mi cita?</span>
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="fas fa-caret-down"></i>
+                              </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion2">
+                        <div class="card-body">
+                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                                vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                            <span class="text4">¿Se debe pagar algo adicional al servicio?</span>
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="fas fa-caret-down"></i>
+                              </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion2">
+                        <div class="card-body">
+                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                                vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="column-4">
+            <img src="assets/Images/Cabeza-Neuropublico.png" alt="Logo Neurositio">
+            <hr>
+            <article>
+                <h2>¡Descubre al NeuroEquipo!</h2>
+                <p>Somos un equipo interdisciplanario con gran experiencia y conocimiento en el desarrollo de neurositios web efectivos.</p>
+            </article>
+        </section>
+        <section class="team">
+            <div class="row group-1">
+                <div class="col-sm-3 item">
+                    <img src="assets/Images/Miguel-Angel-Morel.png" alt="Miguel Angel Morel">
+                    <h2>Miguel Angel Morel</h2>
+                    <span>Gerente Recursos Humano</span>
+                </div>
+                <div class="col-sm-3 item">
+                    <img src="assets/Images/Feres-Abou-Gahida.png" alt="Feres Abou Ghaida">
+                    <h2>Feres Abou Ghaida</h2>
+                    <span>Diseño de Interfaz</span>
+                </div>
+                <div class="col-sm-3 item">
+                    <img src="assets/Images/Melisa-Ariza.png" alt="Melisa Ariza">
+                    <h2>Melisa Ariza</h2>
+                    <span>Planner de Contenidos</span>
+                </div>
+                <div class="col-sm-3 item">
+                    <img src="assets/Images/Julian-Otalora.png" alt="Julián Otálora">
+                    <h2>Julián Otálora</h2>
+                    <span>Dirección de proyectos</span>
+                </div>
+            </div>
+            <div class="row group-2">
+                <div class="col-sm-3 item">
+                    <img src="assets/Images/Daniel-Salinas.png" alt="Daniel Salinas">
+                    <h2>Daniel Salinas</h2>
+                    <span>Desarrollo Web</span>
+                </div>
+                <div class="col-sm-3 item">
+                    <img src="assets/Images/Stefany-Sanchez.png" alt="Stefany Sanchez">
+                    <h2>Stefany Sanchez</h2>
+                    <span>Asesoría Estrategia Web</span>
+                </div>
+                <div class="col-sm-3 item">
+                    <img src="assets/Images/Orlando-Castillo.png" alt="Orlando Castillo">
+                    <h2>Orlando Castillo</h2>
+                    <span>Psicología de compra</span>
+                </div>
+                <div class="col-sm-3 item">
+                    <img src="assets/Images/Pablo-Otalora.png" alt="Pablo Otálora">
+                    <h2>Pablo Otálora</h2>
+                    <span>Dirección de estrategia</span>
+                </div>
+            </div>
+        </section>
+        <section class="testimonial-slider">
+            <hr>
+            <div class="container text-center my-3">
+                <div class="row mx-auto my-auto">
+                    <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#recipeCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#recipeCarousel" data-slide-to="1"></li>
+                            <li data-target="#recipeCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner w-100" role="listbox">
+                            <h2>¿YA ERES UN NEUROCLIENTE SATISFECHO? <br> <strong class="subtitle"> OBTÉN MÁS CLIENTES CON TU NEUROSITIO </strong></h2>
+                            <div class="carousel-item active">
+                                <div class="d-block commentary col-4">
+                                    <article>
+                                        <img src="assets/images/Perfil-2.png" alt="Perfil Testimonio"><br>
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        <p>“Amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Pamet, consectetuer adipiscing elit, mod.”</p>
+                                        <hr>
+                                        <p>Marina Layer</p>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-block commentary col-4">
+                                    <article>
+                                        <img src="assets/images/Perfil-2.png" alt="Perfil Testimonio"><br>
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        <p>“Amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Pamet, consectetuer adipiscing elit, mod.”</p>
+                                        <hr>
+                                        <p>Marina Layer</p>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-block commentary col-4">
+                                    <article>
+                                        <img src="assets/images/Perfil-2.png" alt="Perfil Testimonio"><br>
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        <p>“Amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Pamet, consectetuer adipiscing elit, mod.”</p>
+                                        <hr>
+                                        <p>Marina Layer</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="table-price pricing">
+            <article>
+                <span>NEUROMARKETING DIGITAL</span>
+                <h2>¡TODO LISTO PARA QUE EMPIECES A <br> <strong> ADQUIRIR CLIENTES Y DOMINES EL INTERNET! </strong></h2>
+            </article>
+            <div class="container">
+                <div class="row">
+                    <!-- Free Tier -->
+                    <div class="col-lg-4">
+                        <div class="card mb-5 mb-lg-0">
+                            <div class="card-body">
+                                <h5 class="card-title text-muted text-uppercase text-center">PRINCIPIANTE</h5>
+                                <br>
+                                <h6 class="card-price text-center">$590.000</h6>
+                                <span class="period">+ $65.000 MENSUALES</span>
+                                <hr>
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Single User</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>5GB Storage</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+                                    <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Unlimited Private Projects</li>
+                                    <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Dedicated Phone Support</li>
+                                    <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Free Subdomain</li>
+                                    <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status Reports</li>
+                                </ul>
+                                <a href="#" class="btn btn-block btn-primary text-uppercase">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Plus Tier -->
+                    <div class="col-lg-4 item2">
+                        <div class="card mb-5 mb-lg-0">
+                            <div class="promo">
+                                <img src="assets/Images/Estrella.png" alt="Promocion">
+                                <p>PRECIO EXCLUSIVO AÑO NUEVO</p>
+                                <div class="time">
+                                    <span>
+                                        <div class="tm" id="Hora2">00</div>
+                                        HORAS
+                                    </span>
+                                    <span>
+                                        <div class="tm" id="Minutos2">00</div>
+                                        MINUTOS
+                                    </span>
+                                    <span>
+                                        <div class="tm" id="Segundos2">00</div>
+                                        SEGUNDOS
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="card-body borde-prof">
+                                <h5 class="card-title text-muted text-uppercase text-center">PROFESIONAL</h5>
+                                <article class="price-old">
+                                    <span>$990.000</span>
+                                </article>
+                                <h6 class="card-price text-center prof">$790.000</h6>
+                                <span class="period">+ $65.000 MENSUALES</span>
+                                <hr>
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>5 Users</strong></li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>50GB Storage</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Private Projects</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated Phone Support</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Free Subdomain</li>
+                                    <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status Reports</li>
+                                </ul>
+                                <a href="#" class=" prof-btn btn btn-block btn-primary text-uppercase">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pro Tier -->
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-muted text-uppercase text-center">CORPORATIVO</h5>
+                                <br>
+                                <h6 class="card-price text-center">$1.290.000</h6>
+                                <span class="period">+ $65.000 MENSUALES</span>
+                                <hr>
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Unlimited Users</strong></li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>150GB Storage</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Private Projects</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated Phone Support</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Unlimited</strong> Free Subdomains</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Monthly Status Reports</li>
+                                </ul>
+                                <a href="#" class="btn btn-block btn-primary text-uppercase">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="maps">
+            <div class="row items">
+                <div class="col-sm-8 item1">
+                    <div data-key="AIzaSyDwNBXmHBDQ29JWsRH8gwNVkf7mM0-flaI" data-control-zoom="true" data-control-type="true" data-control-scale="true" data-control-streetview="true" data-control-rotate="true" data-event-mousewheel="true" data-zoom="13" role="map" class="gmaps">
+                        <!-- items de ubicaciones -->
+                        <div data-id="1" data-lat="4.6910124" data-lng="-74.04762629999999" data-marker-image="assets/images/Marcador.png" data-marker-width="35" data-marker-height="43" class="marker">
+                            <p>Cra. 18a #103-11</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 item2">
+                    <div class="title">
+                        <h2>VISITA A <strong> NEUROPÚBLICO </strong><br> EN EL NORTE DE BOGOTÁ</h2>
+                    </div>
+                    <div class="img">
+                        <img src="assets/Images/Equipo-NeuroPublico.jpg" alt="Equipo">
+                    </div>
+                    <div class="address">
+                        <p>Cra 18 A # 103 - 11, Bogotá</p>
+                        <p>(Detrás de Ferrari)</p>
+                    </div>
+                    <div class="contact">
+                        <img src="assets/Images/Telefono.png" alt="Contactenos">
+                        <p>319 671 3865</p>
+                        <p>312 490 1099</p>
+                    </div>
+                </div>
+            </div>
+            <img class="log" src="assets/Images/Neuropublico.png" alt="Ubicacion Neuropublico">
+        </section>
+        <div class="Copyright">
+            <br>
+            <p>© Copyright 2019 | Sitio web diseñado y creado por Neuropúblico Agencia de Neuromarketing Digital</p>
+        </div>
     </main>
 </body>
 

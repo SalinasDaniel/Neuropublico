@@ -1,0 +1,52 @@
+body {
+    main {
+        .column-3 {
+            background: linear-gradient(to right, #8540D1 0%, #0069FF 100%);
+            padding-top: 1%;
+            padding-bottom: 1%;
+            @include breakpoint(phone) {
+                padding-top: 10%;
+                padding-bottom: 10%;
+            }
+            .items {
+                text-align: center;
+                color: #FFFFFF;
+                .item1 {
+                    border-right: solid 1px #FFFFFF;
+                    @include breakpoint(phone) {
+                        border: none;
+                    }
+                    h2 {
+                        font-size: 28px;
+                        font-weight: bold;
+                        @include breakpoint(phone) {
+                            font-size: 23px;
+                        }
+                    }
+                }
+                .item2 {
+                    p {
+                        font-weight: bold;
+                        font-size: 121px;
+                    }
+                    .btn {
+                        border: solid 1px #FFFFFF;
+                        background-color: transparent;
+                        font-weight: bold;
+                        color: #FFFFFF;
+                        border-radius: 9px;
+                        margin-top: -60px;
+                        transition: 1s;
+                        @include breakpoint(phone) {
+                            margin-top: -20px;
+                        }
+                    }
+                    .btn:hover {
+                        color: #0069FF;
+                        background-color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+}

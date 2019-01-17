@@ -1,0 +1,87 @@
+body {
+    header {
+        .promotion {
+            background: linear-gradient(to right, #8540D1, #0069FF);
+            text-align: center;
+            color: #FFFFFF;
+            font-size: 14px;
+            .close {
+                color: #FFFFFF;
+                margin-top: 24px;
+                margin-right: 23px;
+                font-size: 12px;
+            }
+            .items {
+                padding-left: 7%;
+                img {
+                    width: 4%;
+                    height: 53px;
+                    @include breakpoint(phone) {
+                        width: 19%;
+                    }
+                    @include breakpoint(tablet) {
+                        width: 7%;
+                    }
+                }
+                p {
+                    margin-top: 21px;
+                    span {
+                        border-bottom: solid 1px #E6AA0C;
+                    }
+                }
+                .time {
+                    display: flex;
+                    margin-top: 17px;
+                    margin-left: 2%;
+                    @include breakpoint(phone) {
+                        display: contents;
+                    }
+                    @include breakpoint(tablet) {
+                        margin-left: 0%;
+                    }
+                    span {
+                        margin-top: 5px;
+                        @include breakpoint(phone) {
+                            margin-top: 18px;
+                        }
+                    }
+                    .tm {
+                        float: left;
+                        margin-right: 6px;
+                        margin-left: 6px;
+                        background-color: #333333;
+                        opacity: 0.9;
+                        width: 29px;
+                        height: 29px;
+                        border-radius: 6px;
+                        padding-top: 5px;
+                        margin-top: -7px;
+                    }
+                }
+                .btn {
+                    color: #FFFFFF;
+                    margin-left: 10%;
+                    font-size: 14px;
+                    border: solid 1px;
+                    height: 35px;
+                    border-radius: 6px;
+                    margin-top: 12px;
+                    transition: 1s;
+                    @include breakpoint(phone) {
+                        margin-bottom: 30px;
+                        margin-left: 3%;
+                    }
+                    @include breakpoint(tablet) {
+                        margin-left: 0%;
+                        margin-bottom: 30px;
+                        margin-top: 19px;
+                    }
+                }
+                .btn:hover {
+                    background-color: #FFFFFF;
+                    color: #0069FF;
+                }
+            }
+        }
+    }
+}

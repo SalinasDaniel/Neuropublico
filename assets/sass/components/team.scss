@@ -1,0 +1,56 @@
+body {
+    main {
+        .team {
+            text-align: center;
+            padding-left: 4%;
+            padding-right: 4%;
+            @include breakpoint(phone) {
+                padding-left: 0%;
+                padding-right: 0%;
+            }
+            .group-1 {
+                background-image: url('../../assets/Images/Fondo-Equipo.jpg');
+                height: 284px;
+                @include breakpoint(phone) {
+                    height: 1700px;
+                    padding-top: 10%;
+                }
+                @include breakpoint(tablet) {
+                    height: 150px;
+                }
+            }
+            .group-2 {
+                background-image: url('../../assets/Images/Fondo-Equipo-2.jpg');
+                margin-top: 150px;
+                height: 296px;
+                @include breakpoint(tablet) {
+                    height: 153px;
+                }
+                @include breakpoint(phone) {
+                    height: 2000px;
+                    margin-top: 0px;
+                    padding-top: 16%;
+                }
+                h2 {
+                    margin-top: 14px;
+                }
+            }
+            .group-1,
+            .group-2 {
+                .item {
+                    img {
+                        width: 100%;
+                    }
+                    h2 {
+                        font-size: 15px;
+                        font-weight: bold;
+                    }
+                    span {
+                        font-size: 17px;
+                        font-family: 'Open Sans Condensed', sans-serif;
+                    }
+                }
+            }
+        }
+    }
+}
