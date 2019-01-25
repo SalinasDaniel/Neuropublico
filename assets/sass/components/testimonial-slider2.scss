@@ -1,0 +1,99 @@
+body {
+    main {
+        .testimonial-slider2 {
+            color: #ffffff;
+            padding-top: 10%;
+            padding-bottom: 10%;
+            text-align: center;
+            background-color: #131313;
+            .title {
+                padding-left: 15%;
+                padding-right: 15%;
+                @include breakpoint(phone) {
+                    padding-left: 10%;
+                    padding-right: 10%;
+                    font-size: 20px;
+                }
+            }
+            @include breakpoint(phone) {
+                padding-top: 20%;
+                padding-bottom: 20%;
+            }
+            .group {
+                margin-top: 300px;
+                padding-left: 7%;
+                padding-right: 7%;
+                @include breakpoint(tablet) {
+                    padding-left: 2%;
+                    padding-right: 2%;
+                }
+                .col-sm-4:nth-child(1),
+                .col-sm-4:nth-child(2),
+                {
+                    @include breakpoint(phone) {
+                        margin-bottom: 234px;
+                    }
+                }
+                .item {
+                    border: solid 1px;
+                    border-radius: 20px;
+                    background-color: #000000;
+                    .title-category {
+                        left: 36%;
+                        position: absolute;
+                        margin-top: -162px;
+                        @include breakpoint(phone) {
+                            left: 33%;
+                        }
+                        @include breakpoint(tablet) {
+                            left: 29%;
+                        }
+                        span {
+                            font-size: 15px;
+                            color: #808080;
+                        }
+                        i {
+                            font-size: 40px;
+                            color: #808080;
+                        }
+                    }
+                    .profile {
+                        margin-top: -59px;
+                    }
+                    article {
+                        padding-bottom: 7%;
+                        p {
+                            padding-left: 8%;
+                            padding-right: 8%;
+                        }
+                        hr {
+                            background-color: #FFFFFF;
+                            width: 40%;
+                            margin-top: 40px;
+                        }
+                        h2 {
+                            font-size: 24px;
+                            font-weight: bold;
+                            margin-bottom: -5px;
+                        }
+                        span {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+            .btn {
+                color: #FFFFFF;
+                border: solid 1px;
+                background-color: transparent;
+                transition: 1s;
+                border-radius: 6px;
+                margin-top: 40px;
+            }
+            .btn:hover {
+                color: #131313;
+                background-color: #FFFFFF;
+            }
+        }
+    }
+}

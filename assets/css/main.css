@@ -1032,52 +1032,6 @@ body main .testimonial-slider {
         left: 37%;
         margin-top: -7px; }
 
-body main .tets-slide {
-  background-color: #131313;
-  text-align: center; }
-  body main .tets-slide #recipeCarousel h2,
-  body main .tets-slide #recipeCarousel p {
-    color: #FFFFFF; }
-  body main .tets-slide #recipeCarousel img {
-    background-color: transparent; }
-  body main .tets-slide #recipeCarousel .carousel-item {
-    margin-top: 290px; }
-    body main .tets-slide #recipeCarousel .carousel-item article .category {
-      position: absolute;
-      width: 100%;
-      top: -158px;
-      right: -1%; }
-      @media (min-width: 668px) and (max-width: 1024px) {
-        body main .tets-slide #recipeCarousel .carousel-item article .category {
-          top: -200px; } }
-      body main .tets-slide #recipeCarousel .carousel-item article .category span,
-      body main .tets-slide #recipeCarousel .carousel-item article .category i {
-        color: #808080; }
-      body main .tets-slide #recipeCarousel .carousel-item article .category i {
-        font-size: 35px; }
-    body main .tets-slide #recipeCarousel .carousel-item article span.position {
-      position: absolute;
-      width: 100%;
-      left: 0;
-      margin-top: -35px;
-      font-size: 10px; }
-      @media (max-width: 667px) {
-        body main .tets-slide #recipeCarousel .carousel-item article span.position {
-          font-size: 15px; } }
-    body main .tets-slide #recipeCarousel .carousel-item .commentary {
-      background-color: #000000; }
-  body main .tets-slide .btn {
-    margin-top: 40px;
-    border-color: #FFFFFF;
-    color: #FFFFFF;
-    transition: 1s; }
-  body main .tets-slide .btn:hover {
-    color: #000000;
-    background-color: #FFFFFF; }
-  body main .tets-slide .carousel-control-prev-icon,
-  body main .tets-slide .carousel-control-next-icon {
-    margin-top: 130px; }
-
 body main {
   /* Hover Effects on Card */ }
   body main .table-price {
@@ -1476,6 +1430,9 @@ body header .promotion {
       @media (max-width: 667px) {
         body header .promotion .items .btn-buttom {
           margin-left: 11%; } }
+      @media (min-width: 668px) and (max-width: 1024px) {
+        body header .promotion .items .btn-buttom {
+          margin-left: 0%; } }
 
 @media (max-width: 667px) {
   body header .promo .items img {
@@ -1613,3 +1570,81 @@ body main .secret-steps {
   body main .secret-steps .btn:hover {
     background-color: #FFFFFF;
     color: #FF4C4C; }
+
+body main .testimonial-slider2 {
+  color: #ffffff;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  text-align: center;
+  background-color: #131313; }
+  body main .testimonial-slider2 .title {
+    padding-left: 15%;
+    padding-right: 15%; }
+    @media (max-width: 667px) {
+      body main .testimonial-slider2 .title {
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 20px; } }
+  @media (max-width: 667px) {
+    body main .testimonial-slider2 {
+      padding-top: 20%;
+      padding-bottom: 20%; } }
+  body main .testimonial-slider2 .group {
+    margin-top: 300px;
+    padding-left: 7%;
+    padding-right: 7%; }
+    @media (min-width: 668px) and (max-width: 1024px) {
+      body main .testimonial-slider2 .group {
+        padding-left: 2%;
+        padding-right: 2%; } }
+    @media (max-width: 667px) {
+      body main .testimonial-slider2 .group .col-sm-4:nth-child(1),
+      body main .testimonial-slider2 .group .col-sm-4:nth-child(2) {
+        margin-bottom: 234px; } }
+    body main .testimonial-slider2 .group .item {
+      border: solid 1px;
+      border-radius: 20px;
+      background-color: #000000; }
+      body main .testimonial-slider2 .group .item .title-category {
+        left: 36%;
+        position: absolute;
+        margin-top: -162px; }
+        @media (max-width: 667px) {
+          body main .testimonial-slider2 .group .item .title-category {
+            left: 33%; } }
+        @media (min-width: 668px) and (max-width: 1024px) {
+          body main .testimonial-slider2 .group .item .title-category {
+            left: 29%; } }
+        body main .testimonial-slider2 .group .item .title-category span {
+          font-size: 15px;
+          color: #808080; }
+        body main .testimonial-slider2 .group .item .title-category i {
+          font-size: 40px;
+          color: #808080; }
+      body main .testimonial-slider2 .group .item .profile {
+        margin-top: -59px; }
+      body main .testimonial-slider2 .group .item article {
+        padding-bottom: 7%; }
+        body main .testimonial-slider2 .group .item article p {
+          padding-left: 8%;
+          padding-right: 8%; }
+        body main .testimonial-slider2 .group .item article hr {
+          background-color: #FFFFFF;
+          width: 40%;
+          margin-top: 40px; }
+        body main .testimonial-slider2 .group .item article h2 {
+          font-size: 24px;
+          font-weight: bold;
+          margin-bottom: -5px; }
+        body main .testimonial-slider2 .group .item article span {
+          font-size: 13px; }
+  body main .testimonial-slider2 .btn {
+    color: #FFFFFF;
+    border: solid 1px;
+    background-color: transparent;
+    transition: 1s;
+    border-radius: 6px;
+    margin-top: 40px; }
+  body main .testimonial-slider2 .btn:hover {
+    color: #131313;
+    background-color: #FFFFFF; }
