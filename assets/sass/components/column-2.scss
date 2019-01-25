@@ -36,9 +36,9 @@ body {
                         font-weight: bold;
                         margin-top: 20px;
                         margin-bottom: 20px;
-                        font-size: 19px;
+                        font-size: 18px;
                         @include breakpoint(desktop) {
-                            font-size: 27px;
+                            font-size: 25px;
                         }
                     }
                     p {
@@ -75,6 +75,32 @@ body {
         }
         .colum-2 {
             background-color: #E9E9E9;
+        }
+        .col-page {
+            padding-top: 10%;
+            @include breakpoint(phone) {
+                padding-top: 20%;
+            }
+            h2 {
+                color: #808080;
+            }
+            .items {
+                .item2 {
+                    article {
+                        h2 {
+                            color: #059DFF;
+                            strong {
+                                color: #003073;
+                            }
+                        }
+                        p {
+                            font-family: 'Fira Sans Extra Condensed', sans-serif;
+                            color: #303030;
+                            line-height: 1;
+                        }
+                    }
+                }
+            }
         }
     }
 }

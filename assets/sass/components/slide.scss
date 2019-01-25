@@ -79,5 +79,46 @@ body {
                 }
             }
         }
+        .slides-package {
+            background-image: url('../../assets/Images/Fondo-Slide2.jpg');
+            @include breakpoint(phone) {
+                padding-top: 68%;
+                height: 1000px;
+            }
+            .items {
+                .item1 {
+                    color: #FFFFFF;
+                    article {
+                        p {
+                            color: #FFFFFF;
+                        }
+                    }
+                    ul {
+                        li {
+                            font-size: 14px;
+                            line-height: 2.4;
+                            img {
+                                margin-left: -1%;
+                            }
+                        }
+                    }
+                }
+                .item2 {
+                    @include breakpoint(desktop) {
+                        padding-right: 0;
+                        text-align: right;
+                    }
+                    img {
+                        @include breakpoint(phone) {
+                            width: 100%;
+                        }
+                        @include breakpoint(tablet) {
+                            width: 104%;
+                            margin-top: 286px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

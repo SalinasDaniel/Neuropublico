@@ -21,6 +21,8 @@ body {
                 margin-bottom: 80px;
                 @include breakpoint(phone) {
                     font-size: 18px;
+                    padding-left: 9%;
+                    padding-right: 9%;
                 }
             }
             .items {
@@ -124,6 +126,48 @@ body {
             .btn:hover {
                 background-color: #FFFFFF;
                 color: #E85A24;
+            }
+        }
+        .step-page {
+            background-image: url('../../assets/Images/Fondo-Lineas.jpg');
+            h2.title2,
+            h2.title {
+                color: #05ACFF;
+            }
+            img.check {
+                margin-top: 60px;
+            }
+            .items {
+                .item {
+                    .num {
+                        margin-left: -12px;
+                        color: #05ACFF;
+                    }
+                    .linea {
+                        top: 48px;
+                        left: 75%;
+                    }
+                    p:nth-child(4) {
+                        color: #05ACFF;
+                    }
+                    p:nth-child(5) {
+                        font-family: 'Fira Sans Extra Condensed', sans-serif;
+                    }
+                    p:nth-child(6) {
+                        font-size: 12px;
+                    }
+                    .line {
+                        display: none;
+                    }
+                }
+            }
+            .num-4 {
+                left: 45%;
+                margin-top: -126px;
+                color: #05ACFF;
+                @include breakpoint(phone) {
+                    margin-top: -158px;
+                }
             }
         }
     }

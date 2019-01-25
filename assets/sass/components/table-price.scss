@@ -17,7 +17,7 @@ body {
                     color: #070B19;
                     font-family: 'Montserrat', sans-serif;
                     @include breakpoint(phone) {
-                        font-size: 26px;
+                        font-size: 30px;
                         padding-left: 9%;
                         padding-right: 9%;
                         margin-bottom: 100px;
@@ -105,7 +105,8 @@ body {
             box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
         }
         .pricing hr {
-            margin: 1.5rem 0;
+            margin: 1rem 0;
+            margin-bottom: 10px;
         }
         .pricing .card-title {
             margin: 0.5rem 0;
@@ -173,6 +174,89 @@ body {
             }
             .pricing .card:hover .btn {
                 opacity: 1;
+            }
+        }
+        section.price-page {
+            background: rgba(0, 80, 217, 1);
+            background: -moz-linear-gradient(-45deg, rgba(0, 80, 217, 1) 0%, rgba(0, 199, 249, 1) 51%, rgba(0, 80, 217, 1) 100%);
+            background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0, 80, 217, 1)), color-stop(51%, rgba(0, 199, 249, 1)), color-stop(100%, rgba(0, 80, 217, 1)));
+            background: -webkit-linear-gradient(-45deg, rgba(0, 80, 217, 1) 0%, rgba(0, 199, 249, 1) 51%, rgba(0, 80, 217, 1) 100%);
+            background: -o-linear-gradient(-45deg, rgba(0, 80, 217, 1) 0%, rgba(0, 199, 249, 1) 51%, rgba(0, 80, 217, 1) 100%);
+            background: -ms-linear-gradient(-45deg, rgba(0, 80, 217, 1) 0%, rgba(0, 199, 249, 1) 51%, rgba(0, 80, 217, 1) 100%);
+            background: linear-gradient(135deg, rgba(0, 80, 217, 1) 0%, rgba(0, 199, 249, 1) 51%, rgba(0, 80, 217, 1) 100%);
+            h2 {
+                color: #FFFFFF;
+            }
+            .item2 .promo img {
+                width: 40%;
+                margin-top: -26px;
+            }
+            .period {
+                font-size: 15px;
+                display: contents;
+            }
+            .container {
+                .row {
+                    .category {
+                        left: 36%;
+                        position: absolute;
+                        margin-top: 30px;
+                        font-size: 29px;
+                        color: #FFFFFF;
+                        font-weight: bold;
+                        opacity: 0.3;
+                        font-family: 'Fira Sans Extra Condensed', sans-serif;
+                        @include breakpoint(phone) {
+                            display: none;
+                        }
+                    }
+                    .card-body {
+                        h5 {
+                            font-size: 29px;
+                            color: #666666 !important;
+                            font-family: 'Fira Sans Extra Condensed', sans-serif;
+                            opacity: 1;
+                        }
+                        h5.text-purple {
+                            color: #983ED6 !important;
+                        }
+                        article {
+                            span {
+                                font-size: 28px;
+                            }
+                        }
+                        ul {
+                            font-family: 'Fira Sans Extra Condensed', sans-serif;
+                            li.line {
+                                text-decoration: line-through;
+                            }
+                            li.mes {
+                                font-size: 22px;
+                                margin-left: 13%;
+                            }
+                            li.text-blue,
+                            i.blue {
+                                color: #0069FF;
+                            }
+                            hr {
+                                margin-left: -15%;
+                            }
+                        }
+                        .btn-2 {
+                            margin-top: 33px;
+                        }
+                        .btn-1 {
+                            margin-top: 49px;
+                        }
+                    }
+                    .item2 {
+                        p {
+                            strong {
+                                font-size: 30px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

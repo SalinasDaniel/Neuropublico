@@ -81,5 +81,46 @@ body {
                 }
             }
         }
+        .accor {
+            background-color: #FFFFFF;
+            h2 {
+                color: #006C9F;
+            }
+            #accordion2 {
+                .card {
+                    .mb-0 {
+                        span.text {
+                            @include breakpoint(desktop) {
+                                margin-right: 19%;
+                            }
+                            @include breakpoint(tablet) {
+                                margin-right: 60%;
+                            }
+                        }
+                        span.text2 {
+                            @include breakpoint(tablet) {
+                                margin-right: 18%;
+                            }
+                        }
+                        span.tex3 {
+                            @include breakpoint(desktop) {
+                                margin-right: 67%;
+                            }
+                            @include breakpoint(tablet) {
+                                margin-right: 42%;
+                            }
+                        }
+                        span.tex4 {
+                            @include breakpoint(desktop) {
+                                margin-right: 61%;
+                            }
+                            @include breakpoint(tablet) {
+                                margin-right: 31%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

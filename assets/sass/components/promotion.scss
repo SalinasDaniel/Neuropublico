@@ -81,6 +81,30 @@ body {
                     background-color: #FFFFFF;
                     color: #0069FF;
                 }
+                .btn-buttom {
+                    margin-left: 21%;
+                    @include breakpoint(phone) {
+                        margin-left: 11%;
+                    }
+                }
+            }
+        }
+        .promo {
+            .items {
+                @include breakpoint(phone) {
+                    img {
+                        width: 19%;
+                        height: 62px;
+                        margin-left: 40%;
+                    }
+                    p {
+                        margin-top: 0;
+                    }
+                    .btn {
+                        margin-bottom: 12px;
+                        margin-top: 0px;
+                    }
+                }
             }
         }
     }

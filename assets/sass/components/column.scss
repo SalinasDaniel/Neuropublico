@@ -52,5 +52,149 @@ body {
                 }
             }
         }
+        .colunm-col {
+            background-image: url('../../assets/Images/fondo-column.jpg');
+            background-size: cover;
+            padding-bottom: 4%;
+            .items {
+                .item1 {
+                    background-color: transparent;
+                }
+                .item2 {
+                    background-color: transparent;
+                    article {
+                        p {
+                            font-weight: normal;
+                            padding-right: 25%;
+                        }
+                        a.text2 {
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
+        .colu {
+            background-image: url('../../assets/Images/Capacitacion-Ventas.jpg');
+            color: #FFFFFF;
+            text-align: center;
+            .items {
+                .item1 {
+                    article {
+                        margin-top: 49px;
+                        font-family: 'Fira Sans Extra Condensed', sans-serif;
+                        line-height: 0;
+                        border: dashed 2px;
+                        width: 77%;
+                        margin-left: 16%;
+                        height: 149px;
+                        border-radius: 16px;
+                        @include breakpoint(phone) {
+                            width: 84%;
+                            margin-left: 6%;
+                            line-height: 1;
+                        }
+                        @include breakpoint(tablet) {
+                            line-height: 1;
+                            margin-left: 18%;
+                        }
+                        h2 {
+                            font-size: 86px;
+                            @include breakpoint(phone) {
+                                font-size: 50px;
+                            }
+                            @include breakpoint(tablet) {
+                                font-size: 55px;
+                            }
+                        }
+                        p {
+                            font-size: 25px;
+                            @include breakpoint(phone) {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+                .item2 {
+                    article {
+                        p {
+                            padding-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .col-whatsapp {
+            background-image: url('../../assets/Images/Fondo-Contactenos.jpg');
+            padding-top: 4%;
+            .items {
+                .item2 {
+                    text-align: right;
+                    article {
+                        color: #FFFFFF;
+                        margin-right: 30%;
+                        @include breakpoint(phone) {
+                            margin-right: 5%;
+                        }
+                        @include breakpoint(tablet) {
+                            margin-right: 8%;
+                        }
+                        h2 {
+                            font-weight: normal;
+                            font-size: 35px;
+                        }
+                        hr {
+                            background-color: #FFFFFF;
+                        }
+                        p {
+                            padding-right: 0;
+                            font-weight: bold;
+                            font-size: 45px;
+                            @include breakpoint(phone) {
+                                font-size: 37px;
+                            }
+                        }
+                        .btn {
+                            color: #FFFFFF;
+                            background: linear-gradient(to right, #20AF38 0%, #60D56A 100%);
+                            width: 50%;
+                            font-size: 23px;
+                            transition: 1s;
+                            @include breakpoint(phone) {
+                                width: 73%;
+                            }
+                        }
+                        .btn:hover {
+                            background: linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+                            color: #20AF38;
+                        }
+                    }
+                }
+            }
+        }
+        .col-times {
+            background-image: url('../../assets/Images/Fondo-Aveces.jpg');
+            .items {
+                .item2 {
+                    article {
+                        color: #FFFFFF;
+                        padding-left: 7%;
+                        h2 {
+                            font-size: 46px;
+                        }
+                        .btn {
+                            color: #FFFFFF;
+                            background-color: transparent;
+                            border: solid 1px;
+                            transition: 1s;
+                        }
+                        .btn:hover {
+                            color: #005EED;
+                            background-color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

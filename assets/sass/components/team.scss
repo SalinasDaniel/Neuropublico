@@ -11,6 +11,7 @@ body {
             .group-1 {
                 background-image: url('../../assets/Images/Fondo-Equipo.jpg');
                 height: 284px;
+                border-radius: 20px;
                 @include breakpoint(phone) {
                     height: 1700px;
                     padding-top: 10%;
@@ -23,6 +24,7 @@ body {
                 background-image: url('../../assets/Images/Fondo-Equipo-2.jpg');
                 margin-top: 150px;
                 height: 296px;
+                border-radius: 20px;
                 @include breakpoint(tablet) {
                     height: 153px;
                 }
@@ -51,6 +53,10 @@ body {
                     }
                 }
             }
+        }
+        .tem {
+            background-image: url('../../assets/Images/Fondo-Lineas.jpg');
+            padding-bottom: 20%;
         }
     }
 }

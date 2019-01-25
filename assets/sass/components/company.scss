@@ -1,0 +1,15 @@
+body {
+    main {
+        .company {
+            background-color: #131313;
+            text-align: center;
+            padding-top: 10%;
+            img {
+                width: 100%;
+                @include breakpoint(desktop) {
+                    width: auto;
+                }
+            }
+        }
+    }
+}
